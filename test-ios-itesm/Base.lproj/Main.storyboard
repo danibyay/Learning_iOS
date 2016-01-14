@@ -55,6 +55,10 @@
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="nyY-7T-Xhr" appends="YES" id="qKc-BF-HVC"/>
+                            <outletCollection property="gestureRecognizers" destination="nyY-7T-Xhr" appends="YES" id="vsa-5B-YUp"/>
+                            <outletCollection property="gestureRecognizers" destination="voa-A7-iFm" appends="YES" id="BeQ-hA-3Zg"/>
+                            <outletCollection property="gestureRecognizers" destination="5mt-nT-F9E" appends="YES" id="JD4-J7-3mL"/>
+                            <outletCollection property="gestureRecognizers" destination="glk-Nd-ylF" appends="YES" id="UcC-FB-JPY"/>
                         </connections>
                     </view>
                     <connections>
@@ -65,6 +69,21 @@
                 <swipeGestureRecognizer direction="right" id="nyY-7T-Xhr">
                     <connections>
                         <action selector="swipeWasReceived:" destination="BYZ-38-t0r" id="eoa-ze-jRg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="voa-A7-iFm">
+                    <connections>
+                        <action selector="swipeLeftReceived:" destination="BYZ-38-t0r" id="d4g-Uo-jhJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="5mt-nT-F9E">
+                    <connections>
+                        <action selector="swipedDown:" destination="BYZ-38-t0r" id="V1x-Ae-lYU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="glk-Nd-ylF">
+                    <connections>
+                        <action selector="swipedUp:" destination="BYZ-38-t0r" id="g2r-xE-w4o"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

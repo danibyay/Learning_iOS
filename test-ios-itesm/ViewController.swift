@@ -21,11 +21,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func swipeLeftReceived(sender: UISwipeGestureRecognizer) {
+        dbgLabel.text = "swiped left"
+    }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func swipedDown(sender: UISwipeGestureRecognizer) {
+        dbgLabel.text = "swiped down"
+    }
+    @IBAction func swipedUp(sender: UISwipeGestureRecognizer) {
+        dbgLabel.text = "swiped up"
     }
     
     @IBAction func swipeWasReceived(sender: UISwipeGestureRecognizer) {
