@@ -37,9 +37,10 @@ class ViewController: UIViewController {
         dbgLabel.text = "swiped up"
     }
     
-    @IBAction func swipeWasReceived(sender: UISwipeGestureRecognizer) {
+    @IBAction func swipedRight(sender: UISwipeGestureRecognizer) {
         dbgLabel.text = "swiped right"
     }
+  
     @IBAction func buttonWasPressed(sender: AnyObject) {
         if(toggle){
             dbgLabel.text = "WOW it changed"

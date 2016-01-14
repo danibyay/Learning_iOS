@@ -54,11 +54,10 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="nyY-7T-Xhr" appends="YES" id="qKc-BF-HVC"/>
-                            <outletCollection property="gestureRecognizers" destination="nyY-7T-Xhr" appends="YES" id="vsa-5B-YUp"/>
                             <outletCollection property="gestureRecognizers" destination="voa-A7-iFm" appends="YES" id="BeQ-hA-3Zg"/>
                             <outletCollection property="gestureRecognizers" destination="5mt-nT-F9E" appends="YES" id="JD4-J7-3mL"/>
                             <outletCollection property="gestureRecognizers" destination="glk-Nd-ylF" appends="YES" id="UcC-FB-JPY"/>
+                            <outletCollection property="gestureRecognizers" destination="TVI-DN-OEY" appends="YES" id="gMy-x6-ZiB"/>
                         </connections>
                     </view>
                     <connections>
@@ -66,11 +65,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="nyY-7T-Xhr">
-                    <connections>
-                        <action selector="swipeWasReceived:" destination="BYZ-38-t0r" id="eoa-ze-jRg"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="voa-A7-iFm">
                     <connections>
                         <action selector="swipeLeftReceived:" destination="BYZ-38-t0r" id="d4g-Uo-jhJ"/>
@@ -84,6 +78,11 @@
                 <swipeGestureRecognizer direction="up" id="glk-Nd-ylF">
                     <connections>
                         <action selector="swipedUp:" destination="BYZ-38-t0r" id="g2r-xE-w4o"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="TVI-DN-OEY">
+                    <connections>
+                        <action selector="swipedRight:" destination="BYZ-38-t0r" id="Gts-Bb-60H"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
