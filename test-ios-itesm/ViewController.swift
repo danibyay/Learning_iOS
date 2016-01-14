@@ -17,17 +17,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let name: String = "Daniela"
-        let age: Int = 20
-        
-        printDanielaCharacteristics(name, age: age)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func printDanielaCharacteristics(name: String, age: Int){
-        print(name)
-        print(age)
+    @IBAction func swipeWasFound(sender: UISwipeGestureRecognizer) {
+        print("swipe was found")
     }
 
     override func didReceiveMemoryWarning() {
