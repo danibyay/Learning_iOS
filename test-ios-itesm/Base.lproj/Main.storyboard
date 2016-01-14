@@ -54,24 +54,17 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="zWA-Ap-ns3" appends="YES" id="Cux-vk-ngp"/>
-                            <outletCollection property="gestureRecognizers" destination="t0o-9O-iwf" appends="YES" id="h7U-1F-R3P"/>
+                            <outletCollection property="gestureRecognizers" destination="nyY-7T-Xhr" appends="YES" id="qKc-BF-HVC"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="dbgLabel" destination="6dO-Jb-pl6" id="phA-nX-tgk"/>
-                        <outlet property="swipeWasFound" destination="zWA-Ap-ns3" id="a7V-lq-pp0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="zWA-Ap-ns3">
+                <swipeGestureRecognizer direction="right" id="nyY-7T-Xhr">
                     <connections>
-                        <action selector="swipeWasFound:" destination="BYZ-38-t0r" id="lr7-7x-XX7"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="t0o-9O-iwf">
-                    <connections>
-                        <action selector="swipeWasFound:" destination="BYZ-38-t0r" id="UaA-u3-02f"/>
+                        <action selector="swipeWasReceived:" destination="BYZ-38-t0r" id="eoa-ze-jRg"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
